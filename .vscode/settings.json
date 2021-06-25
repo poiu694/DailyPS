@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "utility": "cpp",
+        "ios": "cpp",
+        "vector": "cpp"
+    },
+    "git.ignoreLimitWarning": true
+}
