@@ -2,7 +2,8 @@
     "files.associations": {
         "utility": "cpp",
         "ios": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "*.tcc": "cpp"
     },
     "git.ignoreLimitWarning": true
 }
