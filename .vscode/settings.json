@@ -3,7 +3,8 @@
         "utility": "cpp",
         "ios": "cpp",
         "vector": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "iostream": "cpp"
     },
     "git.ignoreLimitWarning": true
 }
