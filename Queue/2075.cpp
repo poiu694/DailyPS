@@ -37,6 +37,13 @@ void solve()
     }
 
     cout << minQ.top();
+
+    vector<int> v(N * N);
+    for (int i = 0; i < N * N; i++)
+        cin >> v[i];
+
+    nth_element(v.begin(), v.begin() + N * N - N, v.end(), less<int>());
+    cout << v[N * N - N];
 }
 
 int main()
