@@ -23,6 +23,7 @@ Technique : C++ TECHNIQUE
 Tree : Tree
 Graph : Graph
 TwoPointer : TwoPointer
+List : List
 ```
 
 ### Rule
