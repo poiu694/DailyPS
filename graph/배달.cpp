@@ -5,9 +5,8 @@
 using namespace std;
 
 const int MAX = 987654321;
-vector<pair<int, int>> graph[51];
 
-vector<int> dijkstra(int N, vector<vector<int>> road)
+vector<int> dijkstra(int N, vector<vector<pair<int, int>>> graph)
 {
     priority_queue<pair<int, int>> pq; // dist, node;
     vector<int> dist(N + 1, MAX);
@@ -37,23 +36,25 @@ vector<int> dijkstra(int N, vector<vector<int>> road)
     return dist;
 }
 
-void makeGraphFromRoad(vector<vector<int>> road)
+vector<vector<pair<int, int>>> makeGraphFromRoad(int N, vector<vector<int>> road)
 {
+    vector<vector<pair<int, int>>> ret(N + 1);
     for (auto a : road)
     {
         int now = a[0];
         int next = a[1];
         int dist = a[2];
 
-        graph[now].push_back({next, dist});
-        graph[next].push_back({now, dist});
+        ret[now].push_back({next, dist});
+        ret[next].push_back({now, dist});
     }
+    return ret;
 }
 
 int solution(int N, vector<vector<int>> road, int K)
 {
-    makeGraphFromRoad(road);
-    vector<int> dists = dijkstra(N, road);
+    vector<vector<pair<int, int>>> graph = makeGraphFromRoad(N, road);
+    vector<int> dists = dijkstra(N, graph);
 
     int answer = 0;
     for (int dist : dists)
