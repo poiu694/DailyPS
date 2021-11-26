@@ -1,6 +1,6 @@
-## Daily Problem Solving
+# Daily Problem Solving
 
-### Folder Structure
+## Folder Structure
 
 ```wiki
 BinarySearch : BinarySeacrh & Parametric Search
@@ -28,4 +28,4 @@ List : List
 
 ### Rule
 
-##### `!important!` "DAILY PROBLEM SOLVING"
+#### `!important!` "DAILY PROBLEM SOLVING"
