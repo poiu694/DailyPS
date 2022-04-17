@@ -1,14 +1,16 @@
 {
-    "files.associations": {
-        "utility": "cpp",
-        "ios": "cpp",
-        "vector": "cpp",
-        "*.tcc": "cpp",
-        "iostream": "cpp",
-        "string": "cpp",
-        "filesystem": "cpp",
-        "iosfwd": "cpp",
-        "tuple": "cpp"
-    },
-    "git.ignoreLimitWarning": true
+  "files.associations": {
+    "utility": "cpp",
+    "ios": "cpp",
+    "vector": "cpp",
+    "*.tcc": "cpp",
+    "iostream": "cpp",
+    "string": "cpp",
+    "filesystem": "cpp",
+    "iosfwd": "cpp",
+    "tuple": "cpp",
+    "algorithm": "cpp",
+    "random": "cpp"
+  },
+  "git.ignoreLimitWarning": true
 }
