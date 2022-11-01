@@ -10,6 +10,19 @@ int dy[] = {1, 2, 2, 1, -1, -2, -2, -1};
 int check[MAX][MAX] ={ 0 };
 queue<pair<int, int>> q;
 
+/**
+ * 1
+ *   - 2
+ *      - 3
+ *        - 5    
+ *   - 4
+ *        - 5
+ *           - 6
+ *           - 7
+ *        - 6
+ *           - 7
+ */
+
 int bfs(){
     q.push({startX, startY});
 
