@@ -10,7 +10,8 @@
     "iosfwd": "cpp",
     "tuple": "cpp",
     "algorithm": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "__locale": "cpp"
   },
   "git.ignoreLimitWarning": true
 }
